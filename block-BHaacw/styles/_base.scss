@@ -1,0 +1,25 @@
+
+
+$i: 1;
+@while $i < 4 {
+    h#{$i} {
+        font-size: 3em/$i;
+    }
+    $i: $i + 1;
+}
+
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+.grid-row-span-3 {
+    grid-row: span 3;
+}
+
+.grid-col-span-3 {
+    grid-column: span 3;
+}
+
+.grid-row-span-2 {
+    grid-row: span 2;
+}
