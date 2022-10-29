@@ -1,0 +1,88 @@
+@import "reset";
+@import "base";
+
+$bg-color: rgb(58, 75, 78);
+$blue: rgb(1, 148, 190);
+
+body {
+    background-color: $bg-color;
+    color: $bg-color;
+}
+
+main {
+    max-width: 1000px;
+    width: 80vw;
+    margin: 2em auto;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    margin-bottom: 1em;
+}
+nav {
+    font-size: 1.5em;
+}
+
+header {
+    text-align: center;
+
+    ul {
+        border-top: 4px solid $blue;
+        margin: 2em 0;
+        padding: 0.5em 0;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        background-color: azure;
+        li {
+            display: inline-block;
+            padding-right: 3em;
+
+            a {
+                text-decoration: none;
+                color: $blue;
+            }
+        }
+    }
+}
+
+li:last-of-type {
+    padding-right: 0em;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+article {
+    background-color: azure;
+    padding: 0.5em;
+    border-top: 4px solid $blue;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    background-image: url('../assets/Thinking-of-getting-a-cat.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 100px;
+    margin: 2em 0;
+}
+
+p {
+    padding-bottom: 1em;
+}
