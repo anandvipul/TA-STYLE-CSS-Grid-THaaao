@@ -54,8 +54,15 @@ li:last-of-type {
 
 section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
     gap: 1em;
+}
+
+@media (min-width: 40em) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+    }
 }
 
 article {
